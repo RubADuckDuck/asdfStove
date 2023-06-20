@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "345911181649",
+    "project_id": "roaster-b86c3",
+    "storage_bucket": "roaster-b86c3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:345911181649:android:08ef80aba05a0fb9029370",
+        "android_client_info": {
+          "package_name": "com.example.grgr"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "345911181649-1n868jteq27g6uvtrsa7k13c95rt8vv5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCmRc0qzpL5rrc-eilyRKogvZ6BoEnoZI0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "345911181649-1n868jteq27g6uvtrsa7k13c95rt8vv5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

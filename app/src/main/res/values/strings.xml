@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">grgr</string>
+    <string name="notification_channel_default_id">channel_default</string>
+    <string name="notification_channel_default_name">Default Channel</string>
+    <string name="notification_channel_default_description">Default notification channel</string>
+
+    <string name="notification_channel_high_priority_id">channel_high_priority</string>
+    <string name="notification_channel_high_priority_name">High Priority Channel</string>
+    <string name="notification_channel_high_priority_description">High priority notification channel</string>
+    <string name="accessibility_service_description">Your accessibility service description</string>
+
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+</resources>

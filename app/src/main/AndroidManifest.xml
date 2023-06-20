@@ -1,0 +1,71 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS" tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.BIND_ACCESSIBILITY_SERVICE tools:ignore=ProtectedPermissions" />
+
+
+    <application
+        android:name=".MyApp"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Grgr"
+        tools:targetApi="31">
+
+        <meta-data
+            android:name="com.example.grgr.notification.channel.default"
+            android:resource="@xml/notification_channel_default" />
+
+        <meta-data
+            android:name="com.example.grgr.notification.channel.high_priority"
+            android:resource="@xml/notification_channel_high_priority" />
+        <service
+            android:name=".ChatHeadManager"
+            android:label="@string/app_name"
+            android:exported="true"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService" />
+            </intent-filter>
+            <meta-data
+                android:name="android.accessibilityservice"
+                android:resource="@xml/accessibility_service_config" />
+        </service>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:exported="true"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:layout="@layout/activity_main"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- Add any additional activities, services, or receivers as per your app's requirements -->
+        <activity android:name=".LoginActivity">
+            <!-- If LoginActivity is the first activity to be launched -->
+            <!-- <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter> -->
+        </activity>
+        <activity android:name=".RegistrationActivity">
+        </activity>
+        <activity android:name=".FriendsActivity">
+        </activity>
+        <activity android:name=".ChatActivity">
+        </activity>
+        <activity android:name=".WritePostActivity">
+        </activity>
+    </application>
+
+</manifest>

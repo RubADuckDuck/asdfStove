@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_first_fragment"
+        android:title="Account" />
+    <item
+        android:id="@+id/nav_second_fragment"
+        android:title="Add friend" />
+    <item
+        android:id="@+id/nav_third_fragment"
+        android:title="Chat" />
+    <item
+        android:id="@+id/nav_forth_fragment"
+        android:title="Post" />
+    <!-- Add more items here -->
+</menu>
+
